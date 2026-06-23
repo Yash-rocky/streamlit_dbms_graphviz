@@ -136,7 +136,7 @@ if not df_raw.empty:
         highest_margin_row = df_filtered.loc[df_filtered['Profit Margin (%)'].idxmax()]
         lowest_margin_row = df_filtered.loc[df_filtered['Profit Margin (%)'].idxmin()]
         
-        st.write(f"最高 (Highest) efficiency observed in **{highest_margin_row['month']}** with a margin of **{highest_margin_row['Profit Margin (%)']}%**.")
+        st.write(f"(Highest efficiency observed in **{highest_margin_row['month']}** with a margin of **{highest_margin_row['Profit Margin (%)']}%**.")
         st.write(f"⚠️ **Attention Needed:** **{lowest_margin_row['month']}** generated the lowest margin performance at **{lowest_margin_row['Profit Margin (%)']}%**.")
         
         # Line chart showing Efficiency Trends
